@@ -1,0 +1,249 @@
+@import url("components/resume-cards.css");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 1300px;
+}
+
+
+/* MENU SECTION */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0A0A16;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu-list {
+    display: flex;
+    flex-basis: 40%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list a {
+    color: white;
+    font-weight: 600;
+}
+
+.menu-list a.active {
+    border-bottom: 2px solid #fff;
+}
+
+.menu-list a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.hire-me {
+    color: white;
+    font-weight: 600;
+    padding: 5px 20px;
+    background-image: linear-gradient(to right, #9b65ea 0%, #7f38e4 51%, #7123E2 100%);
+    background-size: 200% auto;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.hire-me:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* HEADER SECTION */
+
+header {
+    margin-top: 70px;
+    height: 700px;
+    width: 100%;
+    background-color: #0A0A16;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: left;
+    height: 100%;
+}
+
+.presentation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.presentation .title {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 67px;
+    width: 100%;
+    letter-spacing: -0.015em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.presentation h4 {
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.presentation .hire-me {
+    width: 150px;
+}
+
+.p-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* ABOUT SECTION */
+
+#about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.heading h4 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.heading h1 {
+    font-weight: 800;
+    color: #7123E2;
+}
+
+#about .skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#about .skill-item {
+    width: 20%;
+    text-align: center;
+}
+
+#about .skill-item img {
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+#about .skill-item h4 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.bio {
+    text-align: center;
+    padding: 0!important;
+}
+
+.bio img {
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+.bio h4 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.tools {
+    justify-content: space-between;
+    text-align: center;
+    padding: 0!important;
+}
+
+.tools .table-h h5 {
+    padding: 8px;
+    background-color: #7123E2;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tools .table-b h6 {
+    padding: 8px;
+    background-color: #0A0A16;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.design-tools {
+    margin-right: 20px;
+}
+
+
+/* RESUME SECTION */
+
+#resume {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #0A0A16;
+}
+
+#resume .heading h4 {
+    color: white;
+}
