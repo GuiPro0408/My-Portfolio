@@ -366,3 +366,67 @@ header .container {
 #portfolio .overlay .view-website:hover {
     background-position: right center;
 }
+
+
+/* CONTACT SECTION */
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+#contact ul {
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .infos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#contact .infos ul li {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+#contact .infos i {
+    text-align: center;
+    font-size: 40px;
+}
+
+#contact input,
+#contact button {
+    border-radius: 50px;
+    border: 1px solid#7123E2;
+}
+
+#contact textarea {
+    border: 1px solid#7123E2;
+}
+
+#contact .send-btn {
+    padding: 5px 40px;
+    font-weight: 500;
+}
+
+#contact .send-btn:hover {
+    background-color: #7123E2;
+}
+
+
+/* FOOTER SECTION */
