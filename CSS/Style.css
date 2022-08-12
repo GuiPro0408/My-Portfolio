@@ -18,6 +18,10 @@ li {
     width: 1300px;
 }
 
+section {
+    padding: 50px 0;
+}
+
 
 /* MENU SECTION */
 
@@ -143,7 +147,6 @@ header .container {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
 }
 
 #about .container {
@@ -240,10 +243,126 @@ header .container {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
     background-color: #0A0A16;
 }
 
 #resume .heading h4 {
     color: white;
+}
+
+
+/* SERVICES SECTION */
+
+#services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#services .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#services .services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+#services .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 25%;
+}
+
+#services .service-item img {
+    height: 100px;
+}
+
+#services .service-item h4 {
+    font-weight: 700;
+    text-align: center;
+}
+
+#services .service-item h6 {
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #2E2B2B;
+}
+
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0A0A16;
+}
+
+#portfolio .heading h4 {
+    color: white;
+}
+
+#portfolio .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portfolio .portfolio-container {
+    justify-content: center;
+    gap: 50px;
+}
+
+#portfolio .portfolio-img {
+    width: 27%;
+    height: 200px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+#portfolio .portfolio-img:hover .overlay {
+    opacity: 1;
+}
+
+#portfolio .overlay {
+    opacity: 0;
+    background: #1B1B30;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: .5s ease;
+}
+
+#portfolio .overlay p {
+    width: 85%;
+    margin: 0 auto 20px auto;
+}
+
+#portfolio .overlay .view-website {
+    background-image: linear-gradient(to right, #E3DE22 0%, #e3ce22 51%, #e3ae22 100%);
+    background-size: 200% auto;
+    font-weight: 500;
+    line-height: 16px;
+    color: black;
+    padding: 7px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+#portfolio .overlay .view-website:hover {
+    background-position: right center;
 }
