@@ -8,7 +8,7 @@
 
 #contact .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 150px;
 }
 
@@ -23,8 +23,8 @@
 
 #contact .infos {
     display: flex;
-    width: 40%;
-    justify-content: space-between;
+    width: 45%;
+    column-gap: 40px;
 }
 
 #contact .infos ul li {
