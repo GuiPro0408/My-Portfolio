@@ -530,14 +530,17 @@ footer i:hover {
 }
 
 @media screen and (max-width: 780px) {
+    nav .menu-list li a {
+        font-size: 14px;
+    }
     section {
         padding: 30px 0;
     }
     .heading h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .heading h1 {
-        font-size: 30px;
+        font-size: 26px;
     }
     .heading {
         margin-bottom: 30px;
@@ -557,10 +560,36 @@ footer i:hover {
         font-size: 14px;
         margin-bottom: 15px;
     }
+    #about .skills {
+        margin-bottom: 50px;
+    }
+    #about .skill-item img {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    #about .skill-item h4 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    #about .skill-item h6 {
+        font-size: 13px;
+    }
     #resume .resume-cards {
         width: 85%;
         margin: 0 auto 40px auto;
         padding: 30px 23px;
+    }
+    #resume .resume-cards .resume-card-heading {
+        margin-bottom: 10px;
+    }
+    #resume .resume-cards .company-name {
+        font-size: 20px;
+    }
+    #resume .resume-cards h6 {
+        font-size: 13px;
+    }
+    #resume .resume-cards .description {
+        font-size: 15.5px;
     }
     #services .services {
         justify-content: center;
@@ -569,7 +598,25 @@ footer i:hover {
         gap: 50px;
     }
     #services .service-item {
-        width: 45%!important;
+        width: 40%!important;
+        gap: 15px;
+    }
+    #services .service-item h4 {
+        font-size: 18px;
+    }
+    #services .service-item h6 {
+        font-size: 14px;
+    }
+    #portfolio .portfolio-img {
+        width: 45%;
+        height: 170px;
+    }
+    #portfolio .overlay p {
+        height: 90px;
+    }
+    #portfolio .overlay p,
+    #portfolio .overlay a {
+        font-size: 14px;
     }
     #contact .container {
         flex-direction: column;
@@ -580,9 +627,28 @@ footer i:hover {
         justify-content: center;
     }
     #contact .infos ul {
-        height: 200px;
+        height: 150px;
     }
     #contact .infos ul:last-child {
         padding-top: 5px!important;
+    }
+    #contact .infos ul li {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+    }
+    #contact .infos i {
+        text-align: center;
+        font-size: 25px;
+    }
+    footer {
+        padding: 30px 0;
+    }
+    footer img {
+        height: 40px;
+    }
+    footer p {
+        font-size: 14px;
     }
 }
