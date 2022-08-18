@@ -60,6 +60,7 @@ nav {
 .nav-item a:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
+    margin-bottom: -2px;
 }
 
 .hire-me {
