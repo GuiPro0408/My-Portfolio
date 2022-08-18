@@ -17,7 +17,36 @@
     <!-- Navigation Bar-->
     <nav>
         <div class="wrapper">
-            <div class="nav-container">
+            <div class="navbar navbar-dark navbar-expand-lg w-100" id="nav-bar">
+                <div class="container-fluid justify-content-between">
+                    <img src="Images/Guillaume Pro 2 - Copy.svg" alt="" height="50px" class="navbar-brand logo">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav mt-2 mt-lg-0 container-fluid justify-content-evenly w-50 mx-0 mx-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Services</a>
+                            </li>
+                            <li class="nav-item mb-2 mb-lg-0">
+                                <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="hire-me mt-lg-0">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="nav-container">
                 <img src="Images/Guillaume Pro 2 - Copy.svg" alt="" height="50px">
                 <ul class="menu-list">
                     <li><a href="#" class="active">Home</a></li>
@@ -26,7 +55,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                 </ul>
                 <a href="#" class="hire-me">Hire Me</a>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -76,12 +105,12 @@
                     </div>
                 </div>
                 <div class="bio-tools row justify-content-between gx-0">
-                    <div class="bio col-4">
+                    <div class="bio col-12 col-sm-4 mb-3 mb-sm-0">
                         <img src="Images/2289_SkVNQSBGQU1PIDEwMjgtMTIy.jpg" alt="">
                         <h4>Guillaume Juste</h4>
                         <h6>I'm a Fullstack Developer and Web Designer. I'm quietly confident, naturally curious and perpetually working on improving my works</h6>
                     </div>
-                    <div class="tools col-7 col-lg-6 d-flex">
+                    <div class="tools col-12 col-sm-7 col-lg-6 d-flex">
                         <div class="design-tools col">
                             <div class="table-h">
                                 <h5>DESIGN TOOLS</h5>
@@ -253,7 +282,7 @@
                     </ul>
                 </div>
 
-                <form class="row g-lg-5 g-3">
+                <form class="row gy-lg-5 gy-3">
                     <div class="col-12">
                         <input type="text" class="form-control" id="inputName" placeholder="Full Name">
                     </div>

@@ -33,6 +33,10 @@ section {
 
 /* MENU SECTION */
 
+#nav-bar .nav-item a {
+    color: white!important;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -42,37 +46,24 @@ nav {
     justify-content: center;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.menu-list {
-    display: flex;
-    flex-basis: 40%;
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-list a {
+.nav-item a {
     color: white;
     font-weight: 600;
+    display: inline-block;
 }
 
-.menu-list a.active {
+.nav-item a.active {
     border-bottom: 2px solid #fff;
+    margin-bottom: -2px;
 }
 
-.menu-list a:hover {
+.nav-item a:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
 }
 
 .hire-me {
+    display: inline-block;
     color: white;
     font-weight: 600;
     padding: 5px 20px;
@@ -94,7 +85,7 @@ nav {
 /* HEADER SECTION */
 
 header {
-    margin-top: 70px;
+    margin-top: 56px;
     height: 700px;
     width: 100%;
     background-color: #0A0A16;
@@ -467,10 +458,6 @@ footer i:hover {
 }
 
 @media screen and (max-width: 1000px) {
-    .nav-container {
-        padding-left: 50px!important;
-        padding-right: 50px!important;
-    }
     .wrapper {
         width: 100%;
     }
@@ -506,10 +493,12 @@ footer i:hover {
     .bio img {
         width: 100%;
     }
-    .bio-tools .tools h5 {
+    .bio-tools .tools h5,
+    .bio h4 {
         font-size: 15px;
     }
-    .bio-tools .tools h6 {
+    .bio-tools .tools h6,
+    .bio h6 {
         font-size: 13.5px;
     }
     .service-item {
@@ -530,9 +519,6 @@ footer i:hover {
 }
 
 @media screen and (max-width: 780px) {
-    nav .menu-list li a {
-        font-size: 14px;
-    }
     section {
         padding: 30px 0;
     }
@@ -561,6 +547,7 @@ footer i:hover {
         margin-bottom: 15px;
     }
     #about .skills {
+        align-items: flex-start;
         margin-bottom: 50px;
     }
     #about .skill-item img {
@@ -650,5 +637,175 @@ footer i:hover {
     }
     footer p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .logo {
+        height: 40px;
+    }
+    .nav-item a {
+        font-size: 14px;
+    }
+    .hire-me {
+        font-size: 15px;
+    }
+    header .presentation-img img {
+        height: 220px;
+    }
+    header .p-container .title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .heading h4 {
+        font-size: 14px;
+    }
+    .heading h1 {
+        font-size: 22px;
+    }
+    #about .skill-item h4 {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    #about .skill-item h6 {
+        font-size: 12px;
+    }
+    .bio-tools .tools h5 {
+        font-size: 12px;
+    }
+    .bio-tools .tools h6 {
+        font-size: 10px;
+    }
+    #resume .resume-cards .company-name {
+        font-size: 18px;
+    }
+    #resume .resume-cards h6 {
+        font-size: 11px;
+    }
+    #resume .resume-cards .description {
+        font-size: 13.5px;
+    }
+    #services .service-item img {
+        height: 75px;
+    }
+    #services .service-item h4 {
+        font-size: 16px;
+    }
+    #services .service-item h6 {
+        font-size: 12px;
+    }
+    #portfolio .overlay p,
+    #portfolio .overlay a {
+        font-size: 12px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #portfolio .portfolio-img {
+        width: 70%!important;
+        height: 170px;
+    }
+    #portfolio .portfolio-img .overlay {
+        padding: 15px 60px;
+    }
+    #contact input::placeholder {
+        font-size: 14px;
+    }
+    #services .service-item {
+        width: 100%!important;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .presentation {
+        width: 100%;
+    }
+    header .presentation .p-container {
+        width: 100%;
+        text-align: center;
+    }
+    header .presentation .p-container h4 {
+        margin: 0 auto 20px auto;
+    }
+    header .presentation .p-container .hire-me {
+        margin: 0 auto;
+    }
+    header .presentation-img {
+        display: none;
+    }
+    header .p-container .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    header .p-container h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    #about .bio-tools .bio img {
+        width: 70%;
+    }
+    #about .bio-tools .bio h4 {
+        font-size: 20px;
+    }
+    #resume .resume-cards {
+        width: 100%;
+    }
+    footer .container {
+        width: 100%;
+        padding: 0 10px!important;
+    }
+    footer .container img {
+        height: 30px;
+        margin-right: 10px;
+    }
+    footer .container .social-media a i {
+        font-size: 15px;
+    }
+    footer .container p {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        height: 300px;
+    }
+    header .p-container .title {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    header .p-container h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    #about .skills {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #about .skills .skill-item {
+        width: 100%;
+    }
+    #resume .resume-cards {
+        padding: 15px 15px
+    }
+    #resume .resume-cards .company-name {
+        font-size: 16px;
+    }
+    #resume .resume-cards h6 {
+        font-size: 9px;
+    }
+    #resume .resume-cards .description {
+        font-size: 11px;
+    }
+    #portfolio .portfolio-img {
+        width: 100%!important;
+    }
+    #portfolio .portfolio-img .overlay {
+        padding: 15px 30px;
     }
 }
